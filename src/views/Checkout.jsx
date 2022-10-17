@@ -12,7 +12,7 @@ const Checkout = () => {
         if (pizza.id === id) {
           if (condition === "add") {
             return { ...pizza, selected: n + 1 };
-          } else if (condition === "rest" && n > 1) {
+          } else if (condition === "rest" && n > 0) {
             return { ...pizza, selected: n - 1 };
           }
         }
